@@ -28,15 +28,15 @@ const analyzer = {
     }
     // Finalmente, retornamos el recuento de caracteres válidos
     return count;
-
+  },
   //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
   
   getNumberCount: (text) => {
-      let count = 0;
+    let count = 0;
     for (let i = 0; i < text.length; i++) {
       const numeros = text[i];
       if (!isNaN(numeros) && numeros !== " " ){
-      count++;
+        count++;
       }
     }   
     return count;
@@ -44,17 +44,17 @@ const analyzer = {
 
   getNumberSum: (text) => {
     let sum = 0;
-   // Encuentra todos los números en el texto
+
     const numbers = text.match(/\d+/g); 
     if (numbers) {
       for (let i = 0; i < numbers.length; i++) {
         sum += parseInt(numbers[i], 10); 
       }
     } 
-   // Suma los números encontrados
+  
     return sum;
   },
-   //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+  //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
   
   getAverageWordLength: (text) => {
     const palabras = text.trim().split(/\s+/); // Divide el texto en palabras
@@ -67,14 +67,14 @@ const analyzer = {
     }
     // Calcula la longitud media de las palabras
     if (palabrasFiltradas.length > 0) {
-      const averageLength = totalLength / palabrasFiltradas.length;
-      return averageLength;
+      const averageLength = (totalLength / palabrasFiltradas.length).toFixed(2);
+      return parseFloat(averageLength); // Convierte a número de nuevo
     } else {
       return 0; // En caso de que no haya palabras en el texto
     }
   },
      
-     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
+  //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
 
 };
 

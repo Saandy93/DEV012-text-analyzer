@@ -11,11 +11,17 @@ const contadorCaract2 = document.querySelector('[data-testid="character-no-space
 const contadorNumeros = document.querySelector('[data-testid="number-count"]');
 const sumaN = document.querySelector('[data-testid="number-sum"]');
 const longitudPalabras = document.querySelector('[data-testid="word-length-average"]');
+const recuentos = document.querySelectorAll(".Recuentos");
 
 resetButton.addEventListener ("click" , function () {
   userText.value = " "; 
+ 
+  recuentos.forEach((element) => {
+    element.textContent = element.textContent.replace(/\d+/, "0");
+  });
 });
 //Boton limpiar
+
 
 userText.addEventListener("input", function () { 
   const text = userText.value;
