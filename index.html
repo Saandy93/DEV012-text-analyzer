@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Analizador de texto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+     <br>
+  </nav>
+  <header>
+    <h1>"Analizador de texto"</h1>
+  </header>
+  <p>¡Bienvenidos a nuestro Analizador de Texto en línea! Ingresa tu texto en el cuadro de texto y obtén información instantánea sobre su composición. Desde contar palabras hasta calcular la longitud promedio de las palabras, te proporcionamos métricas útiles en segundos. ¡Explora y analiza tus textos de manera rápida y sencilla!</p>
+  <br>
+  <br>
+  <textarea name="user-input" placeholder="Ingresa aquí el texto..." cols="80" rows="10"></textarea>
+  <br> 
+    <ul> 
+    <li  class = "Recuentos" data-testid="word-count" >Recuento de palabras: 0 </li>
+    <li class = "Recuentos" data-testid="character-count"  >Recuento de carácteres: 0</li>
+    <li class = "Recuentos" data-testid="character-no-spaces-count"  >Recuento de carácteres excluyendo espacios y signos de puntuación: 0</li>
+    <li class = "Recuentos" data-testid="number-count" >Recuento de números: 0</li>
+    <li class = "Recuentos" data-testid="number-sum" >Suma total de números: 0</li>
+    <li class = "Recuentos" data-testid="word-length-average">Longitud media de las palabras: 0</li>
+    </ul>
+  
+    <button id="reset-button" > Borrar </button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <footer> <p> Desarrollado por: Sandy Funes </p></footer>
+  <script src="index.js" type="module"></script>
+</body>
+</html>
