@@ -69,14 +69,15 @@ textarea::placeholder {
     
 }
 
-.metricas{
+ul{
     display: flex;
     flex-wrap:wrap;
 }
 
+
 .Recuentos{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   padding: 10px;
   border: 1px solid #07cace;
   border-radius: 5px;

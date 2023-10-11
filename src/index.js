@@ -14,7 +14,7 @@ const longitudPalabras = document.querySelector('[data-testid="word-length-avera
 const recuentos = document.querySelectorAll(".Recuentos");
 
 resetButton.addEventListener ("click" , function () {
-  userText.value = " "; 
+  userText.value = ""; 
  
   recuentos.forEach((element) => {
     element.textContent = element.textContent.replace(/\d+/, "0");
