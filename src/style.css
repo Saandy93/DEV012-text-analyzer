@@ -15,12 +15,12 @@ font-family:cursive;
   color: #4b0064;
 text-align: center;
 font-style:italic;
-font-size:larger;
+font-size:medium;
 }
 
 p{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: medium;
+  font-size: small;
   text-align:center;
 }
 
@@ -50,10 +50,11 @@ li{
 
 textarea{
   border-color: #07cace;
-  margin-left: 400px;
+  margin-left: 300px;
+  border-width: 1.5px;
   border-radius: 4px;
   font-family: 'Courier New', Courier, monospace;
-  font-size: medium;
+  font-size: small;
 
 }
 
@@ -65,7 +66,7 @@ textarea[name="user-input"] {
 
 textarea::placeholder {
     color: rgb(70, 0, 105);
-    font-size:large;
+    font-size:medium;
     
 }
 
@@ -78,12 +79,13 @@ ul{
 .Recuentos{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-bottom: 8px;
-  padding: 10px;
+  margin-left: 100px;
+  padding: 8px;
   border: 1px solid #07cace;
   border-radius: 5px;
   box-shadow: 0px 4px 4px rgba(51, 95, 88, 0.26);
   text-align: center;
-  font-size:small;
+  font-size:11px;
 
 
 }
@@ -95,16 +97,16 @@ ul{
     font-style:italic;
     padding: 10px 30px;
     border-radius: 15px;
-    margin-top: 80px;
+    margin-top: 60px;
     background: linear-gradient(
       0deg,
       rgb(248, 194, 244) 0%,
       rgba(138, 214, 254, 0.833) 100%
     );
-    border: 2px solid #99f8f9;
+    border: 2px solid #7eebec;
     box-shadow: #040005;
      cursor: pointer;
-     margin-left: 700px;
+     margin-left: 550px;
 }
 #reset-button:hover {
   background-color: #00e3e7;
