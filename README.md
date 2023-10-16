@@ -1,177 +1,65 @@
 # Analizador de texto
 
-## Índice
+## Descripción
 
-* [1. Consideraciones generales](#1-consideraciones-generales)
-* [2. Preámbulo](#2-preámbulo)
-* [3. Resumen del proyecto](#3-resumen-del-proyecto)
-* [4. Funcionalidades](#4-funcionalidades)
-* [5. Boilerplate](#5-boilerplate)
-* [6. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
-* [7. Pruebas](#7-pruebas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Consideraciones para pedir tu Project Feedback](#9-consideraciones-para-pedir-tu-project-feedback)
-* [10. Objetivos de aprendizaje](#10-objetivos-de-aprendizaje)
-* [11. Funcionalidades opcionales](#11-funcionalidades-opcionales)
-
+Esta herramienta te brinda la capacidad de obtener métricas detalladas de tu texto a medida que lo escribes. No es necesario esperar hasta que tu texto esté completo para conocer sus características; este analizador te proporciona información instantánea. Aquí te explicamos cómo utilizarlo:
 ***
 
-## 1. Consideraciones generales
+## Funciones
 
-* Este proyecto lo resolvemos de manera **individual**.
-* El rango de tiempo estimado para completar el proyecto es de 1 a 3 Sprints.
-* Enfócate en aprender y no solamente en "completar" el proyecto.
-* Te sugerimos que no intentes saberlo todo antes de empezar a codear.
-  No te preocupes demasiado ahora por lo que _todavía_ no entiendas.
-  Irás aprendiendo.
-
-## 2. Preámbulo
-
-![Una lupa sobre texto de libro](https://github.com/Laboratoria/curriculum/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113)
-
-_Credito: Foto de [ethan](https://unsplash.com/fr/@andallthings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-_en [Unsplash](https://unsplash.com/es/fotos/72NpWZJOskU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-
-Un analizador de texto es una aplicación para extraer información útil de un
-texto utilizando diversas técnicas, como el procesamiento del lenguaje
-natural (NLP), el aprendizaje automático (ML) y el análisis estadístico.
-Estas aplicaciones pueden proporcionar una variedad de métricas que brindan
-información básica sobre la longitud y la estructura del texto como por
-ejemplo, el conteo de palabras, el conteo de caracteres, el conteo de
-oraciones y el conteo de párrafos. Otras métricas incluyen el análisis
-de sentimientos, que utiliza técnicas de NLP para determinar el tono
-general positivo, negativo o neutral del texto, y el análisis de
-legibilidad, que utiliza algoritmos para evaluar la complejidad y la
-legibilidad del texto.
-
-En general, las aplicaciones de análisis de texto brindan información
-valiosa y métricas sobre los textos que pueden ayudar a las usuarias a
-tomar decisiones informadas y sacar conclusiones significativas.
-Mediante el uso de estas herramientas de análisis, las usuarias pueden
-obtener una comprensión más profunda de los textos.
-
-## 3. Resumen del proyecto
-
-En este proyecto crearás una aplicación web que servirá para que tu usuaria
-pueda analizar un texto en el navegador mostrando una serie de indicadores y
-métricas específicas sobre caracteres, letras, números, etc. Que hayan sido
-enviadas como _input_ por ella. Lo harás utilizando HTML, CSS y JavaScript.
-
-## 4. Funcionalidades
-
-El listado de funcionalidades es el siguiente:
-
-1. La aplicación debe permitir a la usuaria ingresar un texto escribiéndolo
-en un cuadro de texto.
-
-2. La aplicación debe calcular las siguientes métricas y actualizar el
-resultado en tiempo real a medida que la usuaria escribe su texto:
-
-    - **Recuento de palabras**: la aplicación debe poder contar el número de
+   * **Recuento de palabras:** la aplicación debe poder contar el número de
     palabras en el texto de entrada y mostrar este recuento a la usuaria
-    - **Recuento de caracteres**: la aplicación debe poder contar el número de
+   * **Recuento de caracteres:** la aplicación debe poder contar el número de
     caracteres en el texto de entrada, incluidos espacios y signos de
     puntuación, y mostrar este recuento a la usuaria.
-    - **Recuento de caracteres excluyendo espacios y signos de puntuación**:
+   * **Recuento de caracteres excluyendo espacios y signos de puntuación:**
     la aplicación debe poder contar el número de caracteres en el texto de
     entrada, excluyendo espacios y signos de puntuación, y mostrar este recuento
     a la usuaria.
-    - **Recuento de números**: la aplicación debe contar cúantos números hay en
+  * **Recuento de números:** la aplicación debe contar cúantos números hay en
     el texto de entrada y mostrar este recuento a la usuaria.
-    - **Suma total de números**: la aplicación debe sumar todos los números que
+   * **Suma total de números:** la aplicación debe sumar todos los números que
     hay en el texto de entrada y mostrar el resultado a la usuaria.
-    - **Longitud media de las palabras**: la aplicación debe calcular la
+   * **Longitud media de las palabras:** la aplicación debe calcular la
     longitud media de las palabras en el texto de entrada y mostrársela a la usuaria.
 
-3. La aplicación debe permitir limpiar el contenido de la caja de texto haciendo
-clic en un botón.
+***
 
-![Text analyzer demo](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650556-988dcd6f-bc46-473b-894c-888a66c9fe2d.gif "Text analyzer demo")
+## Instrucciones de uso
 
-## 5. Boilerplate
+- 1- Escribe o pega tu texto en el cuadro de texto.
 
-La lógica del proyecto debe estar implementada completamente en JavaScript. En
-este proyecto NO está permitido usar librerías o frameworks, solo JavaScript
-puro también conocido como Vanilla JavaScript.
+- 2- A medida que escribas o modifiques el texto, las métricas se actualizarán en tiempo real, lo que te permite realizar ajustes sobre la marcha.
 
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio que contiene un _boilerplate_ con tests (pruebas). Un _boilerplate_
-es la estructura básica de un proyecto que sirve como un punto de partida con
-archivos y configuración inicial de dependencias y tests.
+- 3- Si deseas borrar el texto ingresado y comenzar de nuevo, simplemente haz clic en el botón "Borrar".
+  
+***
 
-El boilerplate que les damos contiene esta estructura:
+## Prototipo Inicial
+***
 
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── analyzer.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── analyzer.spec.js
-```
 
-### Descripción de scripts / archivos
+<img src="https://github.com/Saandy93/DEV012-text-analyzer/assets/142628320/72dd01d6-8dcd-43bc-9800-c0c5201ab796">
 
-* `README.md`: debes modificarlo para explicar la información necesaria para el
-  uso de tu aplicación
-  web, así como una introducción a la aplicación, su funcionalidad y decisiones
-  de diseño que tomaron.
-* `.github/workflows`: esta carpeta contine la configuracion para la ejecution
-  de Github Actions. No debes modificar esta carpeta ni su contenido.
-* `docs/images`: contiene las imagenes de este README.
-* `read-only/`: esta carpeta contiene las pruebas de criterios mínimos de
-  aceptación y end-to-end. No debes modificar esta carpeta ni su contenido.
-* [`src/index.html`](./src/index.html): este es el punto de entrada a tu
-  aplicación. Este archivo debe contener tu HTML.
-* [`src/style.css`](./src/style.css): este archivo debe contener las reglas de
-  estilo. Queremos que escribas tus propias reglas, por eso NO está permitido el
-  uso de frameworks de CSS (Bootstrap, Materialize, etc).
-* [`src/analyzer.js`](./src/analyzer.js): acá debes implementar el objeto
-  `analyzer`, el cual ya está _exportado_ en el _boilerplate_. Este objeto
-  (`analyzer`) debe contener seis métodos:
-  - `analyzer.getWordCount(text)`: esta función debe retornar el recuento de
-  palabras que se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getCharacterCount(text)`: esta función debe retornar el recuento
-  de caracteres que se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getCharacterCountExcludingSpaces(text)`: esta función debe retornar
-  el recuento de caracteres excluyendo espacios y signos de puntuación que se
-  encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getNumberCount(text)`: esta función debe retornar cúantos números
-  se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getNumberSum(text)`: esta función debe retornar la suma de todos
-  los números que se encuentran en el parámetro `text` de tipo `string`.
-  - `analyzer.getAverageWordLength(text)`: esta función debe retornar la longitud
-  media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-  En este caso usa 2 dígitos decimales.
-
-  Para ejemplo de uso de cada función recomendamos ver el archivo
-  [`test/analyzer.spec.js`](./test/analyzer.spec.js).
-
-  _Nota:  para simplificar las funcionalidades, definiremos las palabras como
-  un grupos de caracteres separados por espacios. Por ejemplo las palabras del
-  texto de entrada `¡Si, Tú puedes hacerlo!` son cuatro:_
-
-  - _`¡Si,`_
-  - _`Tú`_
-  - _`puedes`_
-  - _`hacerlo!`_
-
-* [`src/index.js`](./src/index.js): acá debes escuchar eventos del DOM, invocar
-  los métodos del objeto `analyzer` según sea necesario y actualizar el resultado
-  en la UI (interfaz de usuaria).
-* [`test/analyzer.spec.js`](./test/analyzer.spec.js): este archivo contiene las
-pruebas unitarias para los métodos del objeto `analyzer`.
 
 ***
+
+## Diseño Final
+***
+
+<img src="https://github.com/Saandy93/DEV012-text-analyzer/assets/142628320/ad51cc6e-a01b-4f9d-aae2-f93eae541546">
+
+***
+
+<img src="https://github.com/Saandy93/DEV012-text-analyzer/assets/142628320/53af0cc7-316f-49d6-b0b3-88b98a1f6ea4">
+
+
+
+
+
+
+
+
 
 #### Deploy
 
@@ -740,22 +628,3 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 - [ ] **Diseñar en distintos niveles de fidelidad**
 
 - [ ] **Seguir los principios básicos de diseño visual**
-
-## 11. Funcionalidades opcionales
-
-Si terminaste con todas las [funcionalidades requeridas](#3-funcionalidades),
-intenta implementar las siguientes funcionalidades opcionales para
-profundizar en los objetivos de aprendizaje del proyecto:
-
-* Que el recuento de palabras y caracteres sea 0 para una entrada de
-  texto vacía.
-* Que el recuento de palabras y caracteres sea 0 para una entrada de
-  texto con solo espacios.
-* Que el recuento de palabras y caracteres sea 0 para una entrada de
-  texto con solo caracteres de puntuación.
-
-Puedes habilitar las pruebas unitarias y en _end to end_ de estos casos
-en los archivos [test/analyzer.spec.js](test/analyzer.spec.js) y
-[read-only/test/e2e/app.spec.js](read-only/test/e2e/app.spec.js).
-También tendrás que ajustar las pruebas ya existentes de las
-funcionalidades requeridas.
